@@ -5,7 +5,7 @@ import { useState } from "react";
 function App() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [importance, setImportance] = useState("Low");
+  const [importance, setImportance] = useState(importanceOptions[0].value);
   const [toDoList, updateToDoList] = useState([]);
   return (
     <div className="App">
